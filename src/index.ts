@@ -7,7 +7,10 @@ export class NumberFormat {
 		this.#options = options || {};
 	}
 
-	public static make(locale: string, options?: Intl.NumberFormatOptions): NumberFormat {
+	public static make(
+		locale: string,
+		options?: Intl.NumberFormatOptions
+	): NumberFormat {
 		return new NumberFormat(locale, options);
 	}
 
